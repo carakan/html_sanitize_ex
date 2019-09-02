@@ -246,6 +246,15 @@ defmodule HtmlSanitizeEx.Scrubber.HTML5 do
     "translate"
   ])
 
+  Meta.allow_tag_with_these_attributes("form", [
+    "accept-charset",
+    "action",
+    "enctype",
+    "method",
+    "name",
+    "target"
+  ])
+
   Meta.allow_tag_with_these_attributes("h1", [
     "accesskey",
     "class",
